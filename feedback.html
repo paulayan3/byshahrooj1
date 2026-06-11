@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arooj Feedback</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#141414;
+color:white;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:30px;
+}
+
+.container{
+width:100%;
+max-width:700px;
+background:#1c1c1c;
+padding:40px;
+border-radius:16px;
+box-shadow:
+0 0 40px rgba(229,9,20,.15);
+}
+
+.logo{
+text-align:center;
+font-size:2.5rem;
+font-weight:700;
+color:#E50914;
+margin-bottom:10px;
+}
+
+.subtitle{
+text-align:center;
+color:#aaa;
+margin-bottom:30px;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+input,
+textarea,
+select{
+width:100%;
+padding:15px;
+background:#262626;
+border:1px solid #333;
+color:white;
+border-radius:8px;
+font-size:16px;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+outline:none;
+border-color:#E50914;
+}
+
+textarea{
+resize:vertical;
+min-height:150px;
+}
+
+button{
+background:#E50914;
+border:none;
+padding:15px;
+border-radius:8px;
+font-size:16px;
+font-weight:600;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#ff1f2d;
+transform:scale(1.03);
+}
+
+.back{
+display:block;
+text-align:center;
+margin-top:20px;
+color:#aaa;
+text-decoration:none;
+}
+
+.back:hover{
+color:#E50914;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="logo">AROOJ</div>
+
+<p class="subtitle">
+Help us improve by sharing your feedback.
+</p>
+
+<form action="https://formspree.io/f/mrevanzy" method="POST">
+
+<input
+type="text"
+name="name"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+name="email"
+placeholder="Your Email"
+required>
+
+<select name="rating" required>
+<option value="">Rate My work
+    
+</option>
+<option>⭐⭐⭐⭐⭐ Excellent</option>
+<option>⭐⭐⭐⭐ Good</option>
+<option>⭐⭐⭐ Average</option>
+<option>⭐⭐ Poor</option>
+<option>⭐ Very Poor</option>
+</select>
+
+<textarea
+name="message"
+placeholder="Write your feedback..."
+required></textarea>
+
+<button type="submit">
+Submit Feedback
+</button>
+
+</form>
+
+<a href="index.html" class="back">
+← Back to Home
+</a>
+
+</div>
+
+</body>
+</html>
